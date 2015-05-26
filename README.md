@@ -6,3 +6,4 @@ Bu projenin amacı eşten dosttan duyduğum ya da internette denk geldiğim gari
 ## Şimdiye kadar yapılanlar...
 
 * FizzBuzz Test - fizzbuzz.html
+* Tavşan Kuş Hesabı - tavsan_kus.html
