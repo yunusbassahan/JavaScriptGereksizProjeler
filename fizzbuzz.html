@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FizzBuzz Test</title>
+	<style type="text/css">
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			padding: 20px;
+		}
+
+		#fizzbuzz {
+			background: #eee;
+			border: 1px solid #ccc;
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<h1>FizzBuzz Test</h1>
+	<p>Rivayete göre büyük yazılım firmalarının personel alımları sırasında programcılardan istediği örnek proje.</p>
+	<p>Yine aynı rivayete göre programcıların bu işi yapmaları için toplam 15 dakikaları var!</p>
+	<p>Detaylı bilgi: <a href="http://c2.com/cgi/wiki?FizzBuzzTest">http://c2.com/cgi/wiki?FizzBuzzTest</a></p>
+
+	<h2>Problem?</h2>
+
+	<p>1'den 100'e kadar sayıları ekrana yazacak bir program yaz. </br>
+	Fakat 3'ün katları için "Fizz",</br> 
+	5'in katları için "Buzz", </br> 
+	3'e ve 5'e tam bölünen sayılar için de "FizzBuzz" yaz.</p>
+
+	<h2>Çözüm:</h2>
+	<p id="fizzbuzz"></p>
+
+	<script>
+	
+		function fizzbuzz(n) {
+		    if( n % 3 == 0 && n % 5 == 0) {
+		        return "FizzBuzz";
+		    }else if( n % 3 == 0 ) {
+		        return "Fizz";
+		    }else if( n % 5 == 0 ) {
+		        return "Buzz";
+		    }else{
+		        return n;
+		    }
+		}
+
+		var sonuc = '';
+		for(var i = 1; i < 101; i++) {
+			sonuc += fizzbuzz(i) + '</br>';
+		}
+
+		document.getElementById("fizzbuzz").innerHTML = sonuc;
+
+	</script>
+
+</body>
+</html>
